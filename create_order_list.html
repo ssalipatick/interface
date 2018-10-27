@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>New Order List</title>
+    
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+    <div id="display_area">
+        <table id="display_table" style="width:100%" class="css-serial">
+            <caption contenteditable="true">Order List for 23th October 2018</caption>
+            <thead>
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        Product
+                    </th>
+                    <th>
+                        Pack Size
+                    </th>
+                    <th>
+                        Qty
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    <div id="input_area">
+        <table id="input_table">
+            <thead>
+                <tr>
+                    <th>
+                        <label for="product_input">
+                            Product:
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" id="product_input" name="product" tabindex="1" placeholder="Product">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="pack_size_input">
+                            Pack Size:
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" id="pack_size_input" name="pack_size" tabindex="2">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="quantity">
+                            Qty:
+                        </label></th>
+                    <td><input type="text" id="quantity_input" name="quantity" tabindex="3"></td>
+                </tr>
+            </thead>
+        </table>
+        <br>
+        <br>
+        <br>
+        <button onclick="add()">ADD</button>
+    </div>
+</body>
+
+<script type="text/javascript" src="js.js"></script>
+
+</html>

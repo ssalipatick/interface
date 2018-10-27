@@ -1,0 +1,45 @@
+.css-serial {
+    counter-reset: serial-number;
+    /* Set the serial number counter to 0 */
+}
+
+.css-serial td:first-child:before {
+    counter-increment: serial-number;
+    /* Increment the serial number counter */
+    content: counter(serial-number);
+    /* Display the counter */
+}
+
+/* CSS3 Zebra Striping */
+table tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+#display_table thead{
+
+    display: block;
+}
+
+
+#display_table tr th {
+
+    height: 30px;
+    line-height: 30px;
+}
+
+#display_table tbody {
+
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px;
+}
+
+
+#display_table {
+    border-spacing: 0;
+    /*border: 2px solid black;*/
+    width: 100%
+
+
+}
